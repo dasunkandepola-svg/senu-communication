@@ -11,6 +11,8 @@ interface Item {
   image: string;
 }
 
+const publicAsset = (filename: string) => `${import.meta.env.BASE_URL}${filename}`;
+
 const items: Item[] = [
   {
     id: 1,
@@ -18,7 +20,7 @@ const items: Item[] = [
     category: "School Bags",
     price: "LKR 3,500",
     description: "with Spine Shield Technology support the healthy posture of growing kids with key ...",
-    image: "/GF7001401-21-min-600x600.jpg",
+    image: publicAsset("GF7001401-21-min-600x600.jpg"),
   },
   {
     id: 2,
@@ -26,7 +28,7 @@ const items: Item[] = [
     category: "Water Bottles",
     price: "Rs. 990",
     description: "Screw Cap Bottles, Back to school, Water bottles for kids, BPA Free, Leak Proof, Durable, Easy to Clean, 100% Safe",
-    image: "/508137-600x600.jpg",
+    image: publicAsset("508137-600x600.jpg"),
   },
   {
     id: 3,
@@ -34,7 +36,7 @@ const items: Item[] = [
     category: "Colour Products",
     price: "Rs. 470",
     description: "Smooth writing blue ink pens",
-    image: "/508246-600x600.jpg",
+    image: publicAsset("508246-600x600.jpg"),
   },
   {
     id: 4,
@@ -42,7 +44,7 @@ const items: Item[] = [
     category: "Office Products, Calculators",
     price: "Rs. 2100",
     description: "Standard grade calculator with large display and solar power",
-    image: "/AT-2276C_front_.jpg",
+    image: publicAsset("AT-2276C_front_.jpg"),
   },
   {
     id: 5,
@@ -50,7 +52,7 @@ const items: Item[] = [
     category: "Art Supplies",
     price: "Rs. 3000",
     description: "Sheets Pack of 500, 80 GSM, High-quality paper for printing and copying",
-    image: "/fe1e162e72f27f24150335c3d72bc171.jpg",
+    image: publicAsset("fe1e162e72f27f24150335c3d72bc171.jpg"),
   },
   {
     id: 6,
@@ -58,7 +60,7 @@ const items: Item[] = [
     category: "School Products",
     price: "Rs. 175",
     description: "Glue bottle with precision tip for easy application",
-    image: "/GF3013201-min-600x600.jpg",
+    image: publicAsset("GF3013201-min-600x600.jpg"),
   },
   {
     id: 7,
@@ -66,7 +68,7 @@ const items: Item[] = [
     category: "Art Supplies",
     price: "Rs. 280",
     description: "High-quality writing paper for school and office use",
-    image: "/PF0083206-min-600x600 - Copy.jpg",
+    image: publicAsset("PF0083206-min-600x600 - Copy.jpg"),
   },
   {
     id: 8,
@@ -74,7 +76,7 @@ const items: Item[] = [
     category: "Art Supplies",
     price: "Rs. 660",
     description: "High-quality paper for drawings",
-    image: "/PF0083227-600x600.jpg",
+    image: publicAsset("PF0083227-600x600.jpg"),
   },
   {
     id: 9,
@@ -82,7 +84,7 @@ const items: Item[] = [
     category: "Writing Tools",
     price: "Rs. 280",
     description: "Paper Products, Writing Papers",
-    image: "/PF0083206-min-600x600.jpg",
+    image: publicAsset("PF0083206-min-600x600.jpg"),
   },
   {
     id: 10,
@@ -90,7 +92,7 @@ const items: Item[] = [
     category: "Writing Tools",
     price: "Rs. 1000",
     description: "Paper Products",
-    image: "/PF0084105-600x600.jpg",
+    image: publicAsset("PF0084105-600x600.jpg"),
   },
   {
     id: 11,
@@ -98,7 +100,7 @@ const items: Item[] = [
     category: "Writing Tools",
     price: "Rs. 1130",
     description: "Colour Pencils",
-    image: "/WF7050605-min-600x600.jpg",
+    image: publicAsset("WF7050605-min-600x600.jpg"),
   },
   {
     id: 12,
@@ -106,7 +108,7 @@ const items: Item[] = [
     category: "Paper Products",
     price: "Rs. 2568",
     description: "Copy Papers, A3 Size, 80 GSM, Pack of 500 Sheets",
-    image: "/TT0010307-min.jpg",
+    image: publicAsset("TT0010307-min.jpg"),
   },
   {
     id: 13,
@@ -114,7 +116,7 @@ const items: Item[] = [
     category: "Supplies",
     price: "Rs. 80",
     description: "Office Products, Staplers & Pins",
-    image: "/TT0040302-min-1-600x600 - Copy.jpg",
+    image: publicAsset("TT0040302-min-1-600x600 - Copy.jpg"),
   },
   {
     id: 14,
@@ -122,7 +124,7 @@ const items: Item[] = [
     category: "Office Products, Staplers & Pins",
     price: "Rs. 200",
     description: "Office Products, Staplers & Pins",
-    image: "/TT0040302-min-1-600x600.jpg",
+    image: publicAsset("TT0040302-min-1-600x600.jpg"),
   },
   {
     id: 15,
@@ -130,7 +132,7 @@ const items: Item[] = [
     category: "Office Products, Punchers",
     price: "Rs. 150",
     description: "Punchers for paper, small size, durable metal construction",
-    image: "/TT0050103-min.jpg",
+    image: publicAsset("TT0050103-min.jpg"),
   },
   {
     id: 16,
@@ -138,7 +140,7 @@ const items: Item[] = [
     category: "Office Products",
     price: "Rs. 18",
     description: "Files",
-    image: "/TT1003205-min-600x600.jpg",
+    image: publicAsset("TT1003205-min-600x600.jpg"),
   },
   {
     id: 17,
@@ -146,7 +148,7 @@ const items: Item[] = [
     category: "Office Products",
     price: "Rs. 18",
     description: "Files",
-    image: "/TT1003206-min-600x600.jpg",
+    image: publicAsset("TT1003206-min-600x600.jpg"),
   },
   {
     id: 18,
@@ -154,7 +156,7 @@ const items: Item[] = [
     category: "Office Products",
     price: "Rs. 18",
     description: "Files",
-    image: "/TT1003207-min-600x600.jpg",
+    image: publicAsset("TT1003207-min-600x600.jpg"),
   },
   {
     id: 19,
@@ -162,7 +164,7 @@ const items: Item[] = [
     category: "Accessories",
     price: "Rs. 1090",
     description: "BlockBuddies",
-    image: "/TT4020202-600x600.jpg",
+    image: publicAsset("TT4020202-600x600.jpg"),
   },
   {
     id: 20,
@@ -170,7 +172,7 @@ const items: Item[] = [
     category: "Writing Tools",
     price: "Rs. 420",
     description: "Colour Pens",
-    image: "/WF8050201-min-600x600.jpg",
+    image: publicAsset("WF8050201-min-600x600.jpg"),
   },
 ];
 
