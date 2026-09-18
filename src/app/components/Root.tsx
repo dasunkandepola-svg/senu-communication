@@ -30,10 +30,12 @@ export function Root() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition">
-              <BookOpen className="w-8 h-8" />
+            <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition">
+              <div className="bg-white/15 dark:bg-white/10 rounded-xl p-2 ring-1 ring-white/20">
+                <BookOpen className="w-7 h-7 text-white" />
+              </div>
               <div>
-                <h1 className="font-bold text-xl">Senu Communication</h1>
+                <h1 className="font-bold text-xl leading-tight">Senu Communication</h1>
                 <p className="text-xs text-blue-100 dark:text-gray-400">School Items & Writing Books</p>
               </div>
             </Link>
